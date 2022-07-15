@@ -1,0 +1,166 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+/* LATIHAN 1 */
+.container-satu{
+    max-width: 800px;
+    background-color: aqua;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+}
+
+.kolom-utama{
+    background-color: salmon;
+    flex: 3;
+    order: 2;
+    text-align: center;
+}
+
+.sidebar-satu{
+    background-color: sandybrown;
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-dua{
+    background-color: seagreen;
+    flex: 2;
+    order: 3;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+/* LATIHAN 1 */
+
+/* LATIHAN 2 */
+.container-dua{
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.layanan{
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.layanan.satu{
+    background-color: aquamarine;
+}
+.layanan.dua{
+    background-color: salmon;
+}
+.layanan.tiga{
+    background-color: violet;
+}
+
+/* LATIHAN 2 */
+
+/* LATIHAN 3 Galery */
+.container-tiga{
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: salmon;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 15px;
+    justify-content: center;
+}
+
+.thumbnail{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.thumbnail img{
+    width: 100%;
+    border-radius: 15px;
+}
+/* LATIHAN 3 Galery */
+
+/* LATIHAN 4 CARD */
+    .container-empat{
+        max-width: 800px;
+        margin: 50px auto;
+        display: flex;
+        background-color:aqua ;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .card .header{
+    height: 100px;
+    background-color: aliceblue;
+    }
+
+    .card{
+        border: 3px solid saddlebrown;
+        border-radius: 20px;
+        overflow: hidden;
+        margin : 10px;
+        flex: 1;
+        background-color: salmon;
+    }
+
+    .card .content{
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+
+    }
+
+    .card .content button{
+        cursor: pointer;
+        box-sizing: border-box;
+        padding: 6px;
+        border-radius: 10px;
+        border: none;
+    }
+
+/* LATIHAN 4 CARD */
+
+/* Responsive */
+@media( max-width: 600px){
+    .container-satu{
+   display: inline-block;
+}
+.container-dua{
+    display: inline-block;
+}
+.layanan{
+    width: 100%;
+}
+.thumbnail{
+    width: 100%;
+}
+
+.container-empat{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.card{
+    margin-bottom: 30px;
+}
+
+}
